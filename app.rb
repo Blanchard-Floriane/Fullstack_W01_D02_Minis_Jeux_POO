@@ -3,6 +3,7 @@ Bundler.require
 
 require_relative 'lib/game'
 require_relative 'lib/player'
+require_relative 'lib/human_player'
 
 # player1 = Player.new("Alex of Ruby Love \u{1F48B}")
 # player2 = Player.new("José of Rubynutile \u{1F629}")

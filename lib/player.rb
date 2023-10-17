@@ -30,18 +30,3 @@ class Player
     return rand(1..6)
   end
 end
-
-#en bonne pratique cette class aurait dû être dans un autre fichier .rb mais cette fois-ci on va faire vite
-class HumanPlayer < Player
-  attr_accessor :weapon_level
-
-  def initialize(name, life_points = 100, weapon_level = 1)
-    @weapon_level = weapon_level # attribut spécifique à HumanPlayer
-    #si j'avais directement écrit @weapon_level = 10 mon attribut aurait été figé dans initialize et donc plus compliqué à modifier dans un autre initialize
-    super(name, life_points) #fait appel au initialize de la classe Event
-  end
-
-  def show_state
-    puts "#{self.name} a #{@life_points} points de vie et une arme de niveau #{@weapon_level}."
-  end
-end
