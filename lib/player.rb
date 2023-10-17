@@ -1,7 +1,7 @@
 class Player
   attr_accessor :name, :life_points 
 
-  def initialize(name, life_points = 10) #ici life_points est un attribut accessoire 
+  def initialize(name, life_points = 50) #ici life_points est un attribut accessoire 
     @name = name.to_s
     @life_points = life_points
   end
@@ -24,6 +24,7 @@ class Player
     damage_point = compute_damage
     puts "Il lui inflige #{damage_point} point.s de dommages."
     player_2.gets_damage(damage_point)
+    puts #pour aérer
   end
   
   def compute_damage
