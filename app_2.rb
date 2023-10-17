@@ -72,9 +72,11 @@ while user.life_points > 0 && (player1.life_points > 0 || player2.life_points > 
       break
     when "0"
       user.attacks(player1)
+      puts #pour aérer
       break
     when "1"
       user.attacks(player2)
+      puts
       break
     else
       puts "Tu devais taper a, s, 0 ou 1... C'est pas bien compliqué Tête de Noeud... Recommence !"

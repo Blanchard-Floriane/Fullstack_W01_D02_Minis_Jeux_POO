@@ -34,19 +34,19 @@ class HumanPlayer < Player
       puts "Tu n'as rien trouvé... "
     when 2..5
       #player find a pack with 10 points of life
-      if @life_points + 10 <= 50
+      if @life_points + 10 <= 70
         @life_points + 10
         puts "Bravo, tu as trouvé un pack de +10 points de vie !"
       else
-        @life_points = 50
+        @life_points = 70
         puts "Bravo, tu as trouvé un pack de points de vie, tu es au max !"
       end
     else
-      if @life_points + 20 <= 50
+      if @life_points + 20 <= 70
         @life_points + 20
         puts "Waow, tu as trouvé un pack de +20 points de vie !"
       else
-        @life_points = 50
+        @life_points = 70
         puts "Bravo, tu as trouvé un pack de points de vie, tu es au max !"
       end
     end

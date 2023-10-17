@@ -24,7 +24,6 @@ class Player
     damage_point = compute_damage
     puts "Il lui inflige #{damage_point} point.s de dommages."
     player_2.gets_damage(damage_point)
-    puts #pour aérer
   end
   
   def compute_damage
