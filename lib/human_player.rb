@@ -35,7 +35,7 @@ class HumanPlayer < Player
     when 2..5
       #player find a pack with 10 points of life
       if @life_points + 10 <= 70
-        @life_points + 10
+        @life_points = @life_points + 10
         puts "Bravo, tu as trouvé un pack de +10 points de vie !"
       else
         @life_points = 70
@@ -43,7 +43,7 @@ class HumanPlayer < Player
       end
     else
       if @life_points + 20 <= 70
-        @life_points + 20
+        @life_points = @life_points + 20
         puts "Waow, tu as trouvé un pack de +20 points de vie !"
       else
         @life_points = 70
